@@ -23,7 +23,7 @@ Colleges have many small problems, such as broken benches, water leakage, lights
 ## Project Structure
 
 ```
-campus-problem-reporter/
+campus_problem_reporter/
 ├── index.html
 └── style.css
 ```
