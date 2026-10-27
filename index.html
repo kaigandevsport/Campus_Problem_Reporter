@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Problem Reporter - College Project</title>
+  <!-- Link to the CSS file (keep both files in the same folder) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <h1>Campus Problem Reporter</h1>
+    <p>A web page where students can report problems in the college campus</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#report">Report Problem</a>
+      <a href="#reports">Reported Problems</a>
+      <a href="#project">Project Details</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== ABOUT ========== -->
+    <section id="about">
+      <h2>About This Project</h2>
+      <p>
+        In a college campus there are many small problems such as broken benches,
+        water leakage, dirty washrooms or lights not working. Students often do not
+        know where to report them. This project gives a simple form where any student
+        can write the problem and its location so that it can be fixed.
+      </p>
+      <div class="boxes">
+        <div class="box"><h3>Easy to use</h3><p>Fill one simple form to report a problem.</p></div>
+        <div class="box"><h3>Clear categories</h3><p>Choose from water, electricity, classroom, hostel and more.</p></div>
+        <div class="box"><h3>Track status</h3><p>See which problems are pending or solved.</p></div>
+      </div>
+    </section>
+
+    <!-- ========== REPORT FORM ========== -->
+    <section id="report">
+      <h2>Report a Problem</h2>
+      <form action="#reports" method="post">
+
+        <label for="name">Student Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="roll">Roll Number</label>
+        <input type="text" id="roll" name="roll" placeholder="e.g. 21CS045" required>
+
+        <label for="email">College Email</label>
+        <input type="email" id="email" name="email" placeholder="name@college.edu" required>
+
+        <label for="category">Problem Category</label>
+        <select id="category" name="category" required>
+          <option value="">-- Select category --</option>
+          <option>Classroom / Furniture</option>
+          <option>Electricity / Lights</option>
+          <option>Water / Washroom</option>
+          <option>Wi-Fi / Computer Lab</option>
+          <option>Hostel / Canteen</option>
+          <option>Road / Safety</option>
+          <option>Other</option>
+        </select>
+
+        <label for="location">Location in Campus</label>
+        <input type="text" id="location" name="location" placeholder="e.g. Block B, Room 204" required>
+
+        <label for="description">Describe the Problem</label>
+        <textarea id="description" name="description" rows="5" placeholder="Write what the problem is..." required></textarea>
+
+        <p class="label">Priority</p>
+        <div class="radios">
+          <label><input type="radio" name="priority" value="low"> Low</label>
+          <label><input type="radio" name="priority" value="medium" checked> Medium</label>
+          <label><input type="radio" name="priority" value="high"> High</label>
+        </div>
+
+        <label for="photo">Upload Photo (optional)</label>
+        <input type="file" id="photo" name="photo" accept="image/*">
+
+        <button type="submit">Submit Report</button>
+        <button type="reset" class="secondary">Clear Form</button>
+      </form>
+    </section>
+
+    <!-- ========== REPORTED PROBLEMS TABLE ========== -->
+    <section id="reports">
+      <h2>Reported Problems</h2>
+      <p>These are sample entries to show how the list will look.</p>
+      <div class="table-box">
+        <table>
+          <tr>
+            <th>No.</th><th>Problem</th><th>Location</th><th>Category</th><th>Status</th>
+          </tr>
+          <tr>
+            <td>1</td><td>Fan not working</td><td>Block A, Room 101</td><td>Electricity</td>
+            <td class="pending">Pending</td>
+          </tr>
+          <tr>
+            <td>2</td><td>Water tap leaking</td><td>Boys Washroom, Block B</td><td>Water</td>
+            <td class="progress">In Progress</td>
+          </tr>
+          <tr>
+            <td>3</td><td>Broken bench</td><td>Library Garden</td><td>Furniture</td>
+            <td class="solved">Solved</td>
+          </tr>
+          <tr>
+            <td>4</td><td>Wi-Fi very slow</td><td>Computer Lab 2</td><td>Wi-Fi</td>
+            <td class="progress">In Progress</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== PROJECT DETAILS ========== -->
+    <section id="project">
+      <h2>Project Details</h2>
+      <table class="details">
+        <tr><th>Project Title</th><td>Campus Problem Reporter</td></tr>
+        <tr><th>Course</th><td>CSE 326</td></tr>
+        <tr><th>Submitted By (Roll no)</th><td>Sahil Rawat(19), Saloni Pushpakar(13), Nishtha(7)</td></tr>
+        <tr><th>Guided By</th><td>Kriti Mathur</td></tr>
+        <tr><th>University</th><td>Lovely Professtional University</td></tr>
+        <tr><th>Technologies Used</th><td>HTML5 and CSS3</td></tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p>College Mini Project 2026 | Campus Problem Reporter</p>
+  </footer>
+
+</body>
+</html>
