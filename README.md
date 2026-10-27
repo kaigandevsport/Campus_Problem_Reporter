@@ -1,7 +1,5 @@
 # Campus_Problem_Reporter
 
-# Campus Problem Reporter
-
 A simple, responsive website for reporting problems in a college campus, built using only **HTML5** and **CSS3**. This is a college mini project.
 
 ## About the Project
