@@ -47,5 +47,5 @@ This is a front-end project. The form does not store data, and the reported prob
 
 ## Author
 
-Sahil Rawat, Roll No. 19
+Sahil Rawat, Roll No. 19,
 Lovely Professional University
